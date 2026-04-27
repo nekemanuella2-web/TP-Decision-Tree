@@ -1,0 +1,46 @@
+
+================================================================================
+FRAUD DETECTION - RAPPORT DE MODELISATION
+================================================================================
+Date: 2026-04-27 15:19:56
+
+1. DATASET
+   - Total samples: 51000
+   - Features: 17
+   - Fraud rate: 0.0492
+
+2. FEATURE ENGINEERING
+   - Missing values handled: imputation par mediane/mode
+   - New features created: 13
+   - Categorical encoding: Label Encoding
+
+3. MODEL
+   - Algorithm: DecisionTreeClassifier
+   - Hyperparameter tuning: GridSearchCV (3-fold Stratified CV)
+   - Best parameters:
+     * class_weight: balanced
+     * criterion: gini
+     * max_depth: 5
+     * min_samples_leaf: 1
+     * min_samples_split: 2
+
+4. PERFORMANCE (Test Set)
+   - Accuracy:  0.5166
+   - Precision: 0.0426
+   - Recall:    0.4104
+   - F1-Score:  0.0771
+   - ROC-AUC:   0.4587
+
+5. TOP 5 FEATURES IMPORTANTES
+   - Transaction_Frequency_Ratio: 0.2302
+   - Amount_per_Account_Age: 0.1551
+   - Time_of_Transaction: 0.1248
+   - Payment_Method_encoded: 0.1234
+   - Transaction_Amount: 0.0974
+
+6. SUBMISSION
+   - File: submission_predictions.csv
+   - Predicted frauds: 24155
+   - Predicted non-frauds: 26845
+
+================================================================================
