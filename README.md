@@ -10,7 +10,7 @@ Le travail se concentre sur trois points :
 
 - `decision_tree.ipynb` : notebook principal a rendre
 - `Fraud Detection Dataset.csv` : jeu de donnees
-- `images/` : graphiques generes pendant l'analyse et l'evaluation
+- `images/` : graphiques generes pendant l'analyse et l'evaluation, y compris la comparaison baseline vs optimisation
 
 ## Etapes du devoir
 
