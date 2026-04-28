@@ -34,5 +34,10 @@ Puis ouvrez `decision_tree.ipynb` dans Jupyter ou VS Code.
 
 ## Remarque
 
-Le but ici n'est pas de construire une solution de competition, mais de montrer une demarche claire et propre de base en EDA, feature engineering et modelisation.
-Le notebook se termine aussi par quelques remarques simples sur les donnees, le modele et les resultats, pour garder une conclusion de devoir claire et complete.
+Le notebook se termine aussi par quelques remarques simples sur les donnees, le modele et les resultats, pour garder une conclusion de devoir claire et complete
+
+## Conclusion
+
+Le jeu de donnees est desequilibre, avec peu de fraudes par rapport aux transactions normales, ce qui rend la detection plus difficile.
+
+Les resultats restent limites, et l'AUC est faible, ce qui montre que le modele distingue encore mal les transactions frauduleuses des transactions normales. Cela semble venir a la fois du jeu de donnees, qui est desequilibre et peu separable, et du fait que le modele utilise reste simple.
